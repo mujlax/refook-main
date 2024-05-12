@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+.html {
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+body {
+    font-family: var(--page-bg);
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+a {
+    color:--text-color;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: --accent;
+    }
+}
