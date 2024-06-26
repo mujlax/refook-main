@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+@font-face {
+    font-family: 'DaysOne';
+    src: url(../fonts/DaysOne.ttf) format('ttf');
+}
+
+
 .html {
     scroll-behavior: smooth;
 }
@@ -15,16 +28,20 @@
 }
 
 body {
-    font-family: var(--page-bg);
+    font-family: var(--font-main);
     background-color: var(--page-bg);
     color: var(--text-color);
 }
 
 a {
-    color:--text-color;
+    color: var(--text-color);
     transition: color 0.2s ease-in;
 
     &:hover {
-        color: --accent;
+        color: var(--accent);
     }
+}
+
+h4 {
+    font-family: 'DaysOne';
 }

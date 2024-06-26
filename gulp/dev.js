@@ -68,7 +68,7 @@ gulp.task('images:dev', () => {
 
 gulp.task('fonts:dev', () => {
     return gulp
-        .src('./src/fonts/**/*')
+        .src('./src/fonts/*')
         .pipe(changed('./build/fonts/'))
         .pipe(gulp.dest('./build/fonts/'))
 })
