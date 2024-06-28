@@ -10,11 +10,13 @@
 	<body>
 		
 		<!-- @@include('blocks/card-recipe.html') -->
-		<!-- @@include('blocks/header.html') -->
+		@@include('blocks/header.html')
 		<!-- @@include('blocks/footer.html') -->
-		 <main>
-			<!-- @@include('blocks/section-top.html') -->
+		 <main class="main">
+			@@include('blocks/section-top.html')
 			@@include('blocks/section-populary.html')
+			@@include('blocks/section-extend-category.html')
+			@@include('blocks/section-content.html')
 		 </main>
 		
 		<script src="./js/index.bundle.js"></script>

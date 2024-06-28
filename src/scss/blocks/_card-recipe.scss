@@ -1,42 +1,46 @@
 .ref {
     display: none;
     position: absolute;
-    width: 200px;
-    height: 250px;
+    width: 275px;
+    height: 350px;
     opacity: 30%;
     background-image: url('../img/REF_card.png');
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 100;
+    
 
 }
 
 .card-recipe {
     position: relative;
-    width: 200px;
-    height: 250px;
+    width: 275px;
+    height: 350px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
 
     &__img {
         position: absolute;
-        width: 300px;
-        height: 200px;
-        transform: translate(-11%, -0%);
-        background-image: url('../img/card-img_1.png');
+        //width: 275px;
+        //height: 200px;
+        scale: 1.45;
+        transform: translate(0%, 8%);
+        //background-image: url('../img/card-img_1.png');
+        // background-repeat: no-repeat;
+        // background-clip: content-box;
         background-color: aqua;
     }
 
     &__timecook {
         position: absolute;
         color: var(--whites);
-        font-size: 10px;
+        font-size: 14px;
         font-weight: bold;
 
         z-index: 100;
-        left: 10px;
-        top: 5px;
+        left: 15px;
+        top: 10px;
     }
 
     &__info {
@@ -46,34 +50,34 @@
         border-radius: 10px;
         background-color: var(--whites);
 
-        top: 180px;
+        top: 255px;
         z-index: 15;
     }
 
     &__rating {
         position: absolute;
-        width: 55px;
-        height: 15px;
+        width: 75px;
+        height: 25px;
         background-color: var(--whites);
         border-radius: 6px;
-        left: 10px;
-        top: -8px;
+        left: 15px;
+        top: -12px;
 
         &-text {
             position: relative;
-            margin: 3px 6px 0 0; 
+            margin: 3px 8px 0 0; 
             text-align: right;
-            font-size: 9px;
+            font-size: 12px;
             font-weight: bold;
 
             &::before {
                 content: "";
     
                 position: absolute;
-                left: 5px;
+                left: 9px;
                 top: 0;
-                width: 10px;
-                height: 10px;
+                width: 13px;
+                height: 13px;
     
                 background-image: url('../img/rating_star.svg');
                 background-repeat: no-repeat;
@@ -87,12 +91,12 @@
     &__author {
         position: absolute;
         
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         border-radius: 100%;
         border: 2px solid var(--whites);
 
-        top: -8px;
+        top: -15px;
         right: 15px;
         
         background-image: url('../img/profile_card.png');
@@ -107,29 +111,34 @@
         -webkit-line-clamp: 2;
         overflow: hidden;
 
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 17px;
+        line-height: 19px;
         font-weight: bold;
 
-        width:  180px;
-        height: 30px;
-        margin: 11px;
+        width:  245px;
+        height: 40px;
+        margin: 15px 15px;
+
+        //border: 1px solid red;
     }
 
     &__hashtags {
         position: absolute;
         display: flex;
         gap: 10px;
-        width: 170px;
-        height: 18px;
+        width: 245px;
+        height: 23px;
+        
 
-        top: 45px;
-        right: 18px;
+        top: 63px;
+        right: 15px;
+
+        //border: 1px solid red;
     }
 
     &__podborka {
         display: inline-block;
-        font-size: 8.5px;
+        font-size: 13px;
         color: var(--whites);
         border-radius: 10px;
         padding: 0 8px;
@@ -138,7 +147,7 @@
 
     &__podborka2 {
         display: inline-block;
-        font-size: 8.5px;
+        font-size: 13px;
         font-weight: bold;
         color: var(--whites);
         border-radius: 10px;
