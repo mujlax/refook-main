@@ -34,12 +34,10 @@ body {
 }
 
 a {
-    color: var(--text-color);
-    transition: color 0.2s ease-in;
+    
+    cursor: pointer;
 
-    &:hover {
-        color: var(--accent);
-    }
+
 }
 
 h4 {
