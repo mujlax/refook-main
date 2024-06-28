@@ -20,10 +20,6 @@
 
 .nav-list li {
 	display: inline-block;
-
-	&--active {
-		color:var(--orange)
-	}
 }
 
 .nav-list__item {
@@ -31,13 +27,13 @@
     transition: color 0.2s ease-in;
     cursor: pointer;
 
-    &:hover {
-        color: var(--orange);
-    }
-
 	&--active {
 		color: var(--orange);
 	}
+
+	&:hover {
+        color: var(--orange);
+    }
 }
 
 .btn_header {
