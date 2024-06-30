@@ -1,0 +1,23 @@
+.intro-card__item--add {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: 220px;
+    height: 320px;
+    background-color: var(--white);
+    border: 5px solid var(--orange);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: scale 0.3s easy;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.intro-card__txt {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--orange);
+}
