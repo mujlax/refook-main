@@ -1,7 +1,9 @@
 .intro-section1__inner {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 }
 
 .intro-section1 {
@@ -11,7 +13,7 @@
         display: flex;
         flex: row;
         justify-content: center;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     &__title {
@@ -22,14 +24,26 @@
     }
 
     &__arrow {
-        padding-top: 60px;
+        scale: 0.8;
+        padding-top: 40px;
         padding-left: 20px;
     }
 
     &__cards {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 15px;
         justify-content: center;
+        align-items: center;
+    }
+
+    &__btn {
+        margin-left: 50px;
+        min-width: 130px;
+        height: 160px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../img/btn_to_klad.svg");
     }
 }
