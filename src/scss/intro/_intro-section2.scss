@@ -1,0 +1,51 @@
+.intro-section2__inner {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.intro-section2 {
+
+    &__titles {
+        font-family: "LXGW WenKai Mono TC", monospace;
+        font-weight: 700;
+        font-size: 60px;
+        padding-bottom: 80px;
+    }
+    &__checkboxes {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        padding-bottom: 20px;
+    }
+
+    &__checkbox {
+        width: 70px;
+        height: 35px;
+        background-repeat: no-repeat;
+        background-image: url("../img/checkbox_on.svg");
+    }
+
+    &__checkbox-inner {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    &__checkbox-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__oldcard {
+        width: 1400px;
+        height: 312px;
+        background-repeat: no-repeat;
+        background-image: url("../img/old-card.svg");
+    }
+}
