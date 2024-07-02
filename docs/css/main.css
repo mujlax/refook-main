@@ -425,6 +425,12 @@ html, body {
   align-items: center;
 }
 
+.logo_header {
+  width: 120px;
+  height: 30px;
+  background-image: url("../img/logo_header.svg");
+}
+
 .nav-list {
   display: flex;
   gap: 20px;
@@ -456,6 +462,18 @@ html, body {
   padding: 10px 15px;
   border-radius: 10px;
   background-color: var(--orange);
+}
+.btn_header-img1 {
+  width: 21px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-image: url("../img/star_btn.svg");
+}
+.btn_header-img2 {
+  width: 18px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url("../img/arrow_btn.svg");
 }
 
 .mobile-nav {
@@ -668,6 +686,13 @@ html, body {
 
 .top__img {
   position: absolute;
+}
+
+.top__img-l {
+  width: 1133px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-image: url("../img/top_img.png");
 }
 
 .intro-card__content {

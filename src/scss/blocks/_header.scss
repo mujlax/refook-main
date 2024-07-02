@@ -10,7 +10,11 @@
 	align-items: center;
 }
 
-.logo_header {}
+.logo_header {
+	width: 120px;
+	height: 30px;
+	background-image: url('../img/logo_header.svg');
+}
 
 .nav-list {
 	display: flex;
@@ -45,4 +49,18 @@
 	padding: 10px 15px;
 	border-radius: 10px;
 	background-color: var(--orange);
+
+	&-img1 {
+		width: 21px;
+		height: 28px;
+		background-repeat: no-repeat;
+		background-image: url("../img/star_btn.svg");
+	}
+
+	&-img2 {
+		width: 18px;
+		height: 10px;
+		background-repeat: no-repeat;
+		background-image: url("../img/arrow_btn.svg");
+	}
 }
