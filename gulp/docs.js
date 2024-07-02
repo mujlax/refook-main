@@ -1,28 +1,16 @@
 const gulp = require('gulp');
-
-
 const fileInclude = require('gulp-file-include');
-const htmlClean = require('gulp-htmlclean');
-const webpHtml = require('gulp-webp-html');
-
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
-const prefixer = require('gulp-autoprefixer');
-const csso = require('gulp-csso');
-const webpSass = require('gulp-webp-css');
-
 const server = require('gulp-server-livereload');
 const clean = require('gulp-clean');
 const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
-const groupMedia = require('gulp-group-css-media-queries'); //brock sourcemaps
+//const groupMedia = require('gulp-group-css-media-queries'); //brock sourcemaps
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const babel = require('gulp-babel');
-
 const imagemin = require('gulp-imagemin');
-const webp = require('gulp-webp');
-
 const changed = require('gulp-changed');
 
 const webpack = require('webpack-stream');
@@ -56,8 +44,8 @@ gulp.task('html:docs', function() {
         .pipe(changed('./docs/', {hasChanged: changed.compareContents}))
         .pipe(plumber(plumberConfig('Html')))
         .pipe(fileInclude(fileIncludeSettings))
-        .pipe(webpHtml())
-        .pipe(htmlClean())
+        //.pipe(webpHtml())
+        //.pipe(htmlClean())
         .pipe(gulp.dest('./docs/'))
 })
 
@@ -65,12 +53,12 @@ gulp.task('sass:docs', function(){
     return gulp.src('./src/scss/*.scss')
         .pipe(changed('./docs/css/'))
         .pipe(plumber(plumberConfig('Sass')))
-        .pipe(prefixer())
+        //.pipe(prefixer())
         .pipe(sassGlob())
-        .pipe(groupMedia())
+        //.pipe(groupMedia())
         .pipe(sass())
-        .pipe(webpSass())
-        .pipe(csso())
+        //.pipe(webpSass())
+        //.pipe(csso())
         .pipe(gulp.dest('./docs/css/'))
 })
 
@@ -78,13 +66,13 @@ gulp.task('images:docs', () => {
     return gulp
         .src('./src/img/**/*')
         .pipe(changed('./docs/img/'))
-        .pipe(webp())
+        //.pipe(webp())
         .pipe(gulp.dest('./docs/img/'))
 
-        .pipe(gulp.src('./src/img/**/*'))
-        .pipe(changed('./docs/img/'))
-        .pipe(imagemin({verbose: true}))
-        .pipe(gulp.dest('./docs/img/'))
+        //.pipe(gulp.src('./src/img/**/*'))
+        //.pipe(changed('./docs/img/'))
+        //.pipe(imagemin({verbose: true}))
+        //.pipe(gulp.dest('./docs/img/'))
 })
 
 gulp.task('fonts:docs', () => {
@@ -106,7 +94,7 @@ gulp.task('js:docs', () => {
         .src('./src/js/*.js')
         .pipe(changed('./docs/js/'))
         .pipe(plumber(plumberConfig('JS')))
-        .pipe(babel())
+        //.pipe(babel())
         .pipe(webpack(require('../webpack.config.js')))
         .pipe(gulp.dest('./docs/js/'));
 })
