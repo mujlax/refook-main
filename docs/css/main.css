@@ -753,6 +753,7 @@ html, body {
 
 .intro-section1 {
   padding-top: 30px;
+  padding-bottom: 120px;
 }
 .intro-section1__titles {
   display: flex;
@@ -786,6 +787,49 @@ html, body {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/btn_to_klad.svg");
+}
+
+.intro-section2__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-section2__titles {
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 700;
+  font-size: 60px;
+  padding-bottom: 80px;
+}
+.intro-section2__checkboxes {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+.intro-section2__checkbox {
+  width: 70px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-image: url("../img/checkbox_on.svg");
+}
+.intro-section2__checkbox-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.intro-section2__checkbox-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.intro-section2__oldcard {
+  width: 1400px;
+  height: 312px;
+  background-repeat: no-repeat;
+  background-image: url("../img/old-card.svg");
 }
 
 .intro-top__inner {
